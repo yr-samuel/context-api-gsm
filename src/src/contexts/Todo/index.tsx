@@ -5,7 +5,6 @@ import { useManagers, useData } from "./hooks";
 
 interface TodoContextProviderProps extends PropsWithChildren { }
 
-
 const TodoContextProvider = (props: TodoContextProviderProps) => {
 	const [todos, dispatch] = useData();
 	const managers = useManagers(dispatch);
